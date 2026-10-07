@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        .title {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        #container0 {
+            display: none;
+            background-color: #2ecc71;
+        }
+
+        #container1 {
+            display: inline;
+            background-color: #2ecc71;
+        }
+
+        #container2 {
+            display: block;
+            background-color: #2ecc71;
+        }
+
+        #container3 {
+            display: inline-block;
+            background-color: #2ecc71;
+        }
+
+        #container4 {
+            display: flex;
+            background-color: #2ecc71;
+        }
+
+        .inner {
+            display: inline-block;
+            background-color: #9b59b6;
+            padding: 8px 12px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            font-size: 13px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">display: none:</div>
+    <div id="container0">
+        <span class="inner">PTI BSc 1</span>
+        <span class="inner">PTI BSc 2</span>
+        <span class="inner">PTI BSc 3</span>
+    </div>
+
+    <div class="title">display: inline:</div>
+    <div id="container1">
+        <span class="inner">PTI BSc 1</span>
+        <span class="inner">PTI BSc 2</span>
+        <span class="inner">PTI BSc 3</span>
+    </div>
+
+    <div class="title">display: block:</div>
+    <div id="container2">
+        <span class="inner">PTI BSc 1</span>
+        <span class="inner">PTI BSc 2</span>
+        <span class="inner">PTI BSc 3</span>
+    </div>
+
+    <div class="title">display: inline-block:</div>
+    <div id="container3">
+        <span class="inner">PTI BSc 1</span>
+        <span class="inner">PTI BSc 2</span>
+        <span class="inner">PTI BSc 3</span>
+    </div>
+
+    <div class="title">display: flex:</div>
+    <div id="container4">
+        <span class="inner">PTI BSc 1</span>
+        <span class="inner">PTI BSc 2</span>
+        <span class="inner">PTI BSc 3</span>
+    </div>
+
+</body>
+</html>
