@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Űrlap</title>
+    </head>
+    <body>
+        <header>
+            HTML5 Űrlap - Y5KZ61
+        </header>
+
+        <section>
+            <form action="feldolgozo.php" target="_self" method="post" id="urlap" name="urlap">
+                <label for="nev">
+                    Név:
+                    <input type="text" id="nev" name="nev" required pattern="(A-ZÁÉÍÓöŐÜŰ a-záéíóöőüű){4,}" title="Írd be a neved" placeholder="Ird be a neved" autofocus autocomplete="off">
+                </label>
+
+                <label for="pin">
+                    PIN kód:
+                    <input type="password" id="pin" name="pin" required pattern="[0-9]{4}" title="4 számjegyű PIN kód" placeholder="PIN kod">
+                </label>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+.table {
+    width: 450px;
+    height: 525px;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+}
+
+.beige {
+    background-color: beige;
+}
+
+.magenta {
+    background-color: magenta;
+    text-align: center;
+}
+
+.scroll {
+    overflow: visible;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.center {
+
+}
