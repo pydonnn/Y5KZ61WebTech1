@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rajzolás a vászonra - Y5KZ61</title>
+        <style>
+            html {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            canvas {
+                border: 1px solid black;
+            }
+
+            main {
+                display: block;
+                width: fit-content;
+                border-bottom: 4px solid gray;
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Rajzolás a vászonra - Y5KZ61</h1>
+        </header>
+        <main>
+            <canvas width="700" height="350" id="y5_canvas"></canvas>
+        </main>
+
+        <footer>
+            <h3>Források</h3>
+            <p><a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a></p>
+            <p><a href="https://www.w3schools.com/tags/ref_canvas.asp">https://www.w3schools.com/tags/ref_canvas.asp</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage</a></p>
+        </footer>
+
+        <script>
+            const y5 = document.getElementById('y5_canvas');
+            const y5x = y5.getContext('2d');
+
+            y5x.fillStyle = 'orange';
+            y5x.font = '30px Arial';
+
+            y5x.fillText('Programtervező informatikus 2026', 200, 40);
+
+            const gradient = y5x.createRadialGradient(175, 100, 10, 200, 110, 75);
+
+            gradient.addColorStop(0, '#FFCC00');
+            gradient.addColorStop(0.3, '#6600FF');
+            gradient.addColorStop(1, '#33FF33');
+
+            y5x.fillStyle = gradient;
+            y5x.fillRect = (100, 60, 200, 120);
+
+            y5x.strokeStyle = 'blue';
+            y5x.lineWidth = 5;
+
+            y5x.beginPath();
+            y5x.rect(80, 200, 240, 140);
+            y5x.stroke();
+
+            y5x.fillStyle = 'yellow';
+            y5x.lineWidth = 3;
+
+            y5x.beginPath();
+            y5x.arc(500, 140, 70, Math.PI * 0.3, Math.PI * 1.5);
+            y5x.fill();
+            y5x.stroke();
+
+            const img = new Image();
+            img.src = 'iit.jpg'
+            img.onload = () => {
+                y5x.drawImage(
+                    img, 500, 230, 200, 120,
+                );
+            }
+        </script>
+    </body>
+</html>

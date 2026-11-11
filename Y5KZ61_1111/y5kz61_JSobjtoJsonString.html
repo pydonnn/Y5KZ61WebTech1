@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript object to JSON String</title>
+    </head>
+    <body>
+        <h3>JavaScript object to JSON String</h3>
+
+        <strong>JSON:</strong>
+        <p id="neptunkod"></p>
+
+        <button onclick="letrehoz()">JSON generálás</button>
+
+        <script>
+            function letrehoz() {
+                let prognyelvek = [
+                    {"Név":"HTML5", "kiterjesztes":".html"},
+                    {"Név":"CSS3", "kiterjesztes":".css"},
+                    {"Név":"JavaScript", "kiterjesztes":".js"}
+                ];
+
+                document.getElementById("neptunkod").innerHTML = JSON.stringify(prognyelvek);
+            }
+        </script>
+    </body>
+</html>
